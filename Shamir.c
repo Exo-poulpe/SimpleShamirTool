@@ -3,7 +3,7 @@
 
 double _sh_greater_random(int64_t value)
 {
-    return (double)(rand() % 1000 + value);
+    return (double)(rand() % (int64_t)pow(value,2) + value);
 }
 
 // Create and fill table with value
